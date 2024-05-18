@@ -1,8 +1,29 @@
+/* .playerWindow {
+	
+	width: 100px;
+	height: 100px;
+} */
+
+#universal_video_background_default {
+    opacity: 0.6; /* Adjust this value between 0 (fully transparent) and 1 (fully opaque) */
+}
+
 /*
 skins available:
 	- default
 */
 /* the border */
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
 * {-webkit-text-size-adjust: none;}
 .universal_video_backgroundBorder {
 	position:relative;
@@ -11,13 +32,15 @@ skins available:
 
 /* the container */
 .universal_video_background {
-	position:relative;
+    position: relative;
+    width: 50%; /* Adjust as needed */
+    height: 50%; /* Adjust as needed */
 }
 .universal_video_backgroundBorder video {
-    max-width: none !important;
+    max-width: 50% !important;
 }
 .universal_video_backgroundBorder iframe {
-     max-width: none !important;
+     max-width: 50% !important;
 }
 
 .setAsBg {
@@ -28,6 +51,8 @@ skins available:
 	left:0;
 	top:0;
 	overflow: hidden;
+	width: 100%; /* Adjust as needed */
+    height: 100%;
 }
 .setAsBg_onlyImage {
 	position:fixed;
@@ -221,7 +246,10 @@ skins available:
 	bottom: auto;
 }
 .lbg_grid_arrow.left {
-	left: 20%;
+    /* Add your modifications here */
+    width: 10px;
+    height: 10px;
+    left: 20%;
 }
 .lbg_grid_arrow:after {
   content: "";
@@ -240,3 +268,5 @@ skins available:
 	bottom: -20px;
 	top: auto;
 }
+
+
